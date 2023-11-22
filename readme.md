@@ -30,23 +30,29 @@
     id: "id книги"
 }
 
+
 Для получения всех книг пропишите get http://localhost:5000/api/getBooks 
+
 
 Для получения книг по автору get http://localhost:5000/api/getBooks c params{
     author: "автор"
 }
 
+
 Для получения книг по названию get http://localhostL5000/api/getBooks с params{
     name: "название"
 }
+
 
 Для получения книг по жанру get http://localhostL5000/api/getBooks с params{
     genre: "жанр"
 }
 
+
 Для получения книг по названию и жанру get http://localhostL5000/api/getBooks с params{
     name: "название",
     genre: "Жанр"
 }
+
 
 Для получения всех жанров напишите get http://localhostL5000/api/getGenres
