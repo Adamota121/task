@@ -1,9 +1,10 @@
+```
 Для запуска необходима - node js (https://nodejs.org/dist/v20.9.0/node-v20.9.0-x64.msi)
 База данных, либо Open Server (Open Panel Server)
 
 Далее необходимо заполнить config.json
-{\n
-    {
+{
+   {
         "dialect": "mysql", Ваша база данных
         "host": "127.0.0.1", Ip базы
         "port": 3306, Порт для подключения
