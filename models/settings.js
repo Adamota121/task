@@ -7,23 +7,7 @@ export const Settings = sequelize.define("Settings", {
     // Жанр настроек
     genre: {
         type: DataTypes.TEXT,
-        get: function () {
-            try {
-            return JSON.parse(this.getDataValue('participants'));
-            } catch (error) {
-              return [];
-            }
-          },
-          set: function (value) {
-            this.setDataValue('participants', JSON.stringify(value));
-          },
         allowNull: false
-    },
-    // Порт сервера
-    port: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        defaultValue: 8080
     }
 }, {
     timestamps: false, // Отключаем автоматические метки времени

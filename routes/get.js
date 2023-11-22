@@ -1,6 +1,7 @@
 import express from 'express';
 import { Op } from 'sequelize';
-import { Books } from '../models/books.js';
+import { Books} from '../models/books.js';
+import { Settings } from '../models/settings.js';
 
 const router = express.Router();
 
@@ -57,8 +58,9 @@ router.get('/getBooks/:id', async (req, res) => {
 })
 
 // Маршрут для получения списка жанров
-router.get('/getGenres', (req, res) => {
-    res.json(global.genre);
+router.get('/getGenres', async (req, res) => {
+    const genre = await Settings.findAll({attributes: ['genre']});
+    res.json(genre);
 })
 
 export default router

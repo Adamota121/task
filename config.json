@@ -5,5 +5,6 @@
     "database": "user",
     "username": "root",
     "password": "",
-    "logging": false
+    "logging": false,
+    "mainPort": 5000
 }
