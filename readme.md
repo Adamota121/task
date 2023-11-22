@@ -4,15 +4,15 @@
 Далее необходимо заполнить config.json
 {
     {
-    "dialect": "mysql", Ваша база данных
-    "host": "127.0.0.1", Ip базы
-    "port": 3306, Порт для подключения
-    "database": "user", Название базы
-    "username": "root", Ваш юзернейм
-    "password": "", Пароль
-    "logging": false, Логирование
-    "mainPort": 5000 Порт для запуска локального сервера, по стандарту, 5000
-}
+        "dialect": "mysql", Ваша база данных
+        "host": "127.0.0.1", Ip базы
+        "port": 3306, Порт для подключения
+        "database": "user", Название базы
+        "username": "root", Ваш юзернейм
+        "password": "", Пароль
+        "logging": false, Логирование
+        "mainPort": 5000 Порт для запуска локального сервера, по стандарту, 5000
+        }
 }
 
 
@@ -24,11 +24,11 @@
     author: "Автор",
     description: "Описание",
     genre: "Жанр"
-}
+    }
 
 Для удаления post http://localhost:5000/api/delete с body{
     id: "id книги"
-}
+    }
 
 
 Для получения всех книг пропишите get http://localhost:5000/api/getBooks 
@@ -41,12 +41,11 @@
 
 Для получения книг по названию get http://localhostL5000/api/getBooks с params{
     name: "название"
-}
-
+    }
 
 Для получения книг по жанру get http://localhostL5000/api/getBooks с params{
     genre: "жанр"
-}
+    }
 
 
 Для получения книг по названию и жанру get http://localhostL5000/api/getBooks с params{
