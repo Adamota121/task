@@ -49,9 +49,9 @@
     }
 
 
-Для получения книг по названию и жанру get http://localhostL5000/api/getBooks с params{
+Для получения книг по названию и автору get http://localhostL5000/api/getBooks с params{
     name: "название",
-    genre: "Жанр"
+    author: "Автору"
 }
 
 
