@@ -2,7 +2,7 @@
 База данных, либо Open Server (Open Panel Server)
 
 Далее необходимо заполнить config.json
-{
+{\n
     {
         "dialect": "mysql", Ваша база данных
         "host": "127.0.0.1", Ip базы
