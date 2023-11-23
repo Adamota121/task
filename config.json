@@ -5,6 +5,7 @@
     "database": "user",
     "username": "root",
     "password": "",
+    "forceSync": true,
     "logging": false,
-    "mainPort": 5000
+    "mainPort": 5010
 }

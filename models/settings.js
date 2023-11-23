@@ -14,12 +14,3 @@ export const Settings = sequelize.define("Settings", {
     createdAt: false, // Отключаем создание временной метки при создании записи
     updatedAt: false, // Отключаем обновление временной метки при обновлении записи
 });
-
-sequelize.afterBulkSync(async () => {
-    const data = await Settings.findAll()
-    if (data[0] != undefined && data[0].genre != undefined) {
-
-        global.genre = data[0].genre
-        return
-    }
-})

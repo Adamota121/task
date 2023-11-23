@@ -50,6 +50,10 @@ router.get('/getBooks', async (req, res) => {
 // Маршрут для получения книги по ID
 router.get('/getBooks/:id', async (req, res) => {
     const id = req.params.id;
+    if(!id) {
+        return res.status(400).json({ error: 'ID не указан' });
+    }
+
     const book = await Books.findByPk(id);
     if (!book) {
         return res.status(404).json({ error: 'Book not found' });

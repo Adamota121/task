@@ -2,9 +2,7 @@ const rateLimit = {};
 
 export function limitRequestsPerIP(req, res, next) {
   const ip = req.ip;
-
-  console.log(rateLimit)
-
+  
   if (rateLimit[ip]) {
     const timeSinceLastRequest = Date.now() - rateLimit[ip];
     if (timeSinceLastRequest < 2000) {
