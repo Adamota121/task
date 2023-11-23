@@ -39,7 +39,7 @@ sequelize.afterBulkSync(async () => {
     });
 
     // Запускаем сервер на порту, указанном в настройках 
-    app.listen(5000, () => {
+    app.listen(config.mainPort || 5000, () => {
         console.log(`[APIserver] Сервер запущен на порту ${5000}`);
     });
 });
