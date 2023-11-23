@@ -18,7 +18,7 @@ export function getSequelizeInstance() {
 
 
         sequelizeInstance.sync({
-            force: false,
+            force: true,
         }).catch((error) => {
             console.error("Error syncing database:", error);
         });
