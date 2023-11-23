@@ -7,7 +7,6 @@ const router = express.Router();
 // Маршрут для загрузки книги
 router.post('/upload', async (req, res) => {
     const data = req.body;
-
     if(data == undefined) return
     const missingField = Tools.checkRequiredFields(['name', 'author', 'description', 'genre'], data);
 
