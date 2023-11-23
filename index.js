@@ -2,6 +2,8 @@ import express from 'express';
 import { getSequelizeInstance } from './middleware/db.js';
 import { Settings } from './models/settings.js';
 import { limitRequestsPerIP } from './middleware/limitRequestsFromIp.js';
+import  config  from './config.json' assert { type: 'json' };
+
 
 import postRouter from './routes/post.js';
 import getRouter from './routes/get.js';
